@@ -13,10 +13,15 @@ It needs WSDL url, method name and a set of params, it also supports basic authe
 We use a simple soap service by java, and start it with the below commands
 
     git clone https://github.com/spring-guides/gs-soap-service.git
+    cd gs-soap-service
     mvn package
     java -jar target/gs-soap-service-0.1.0.jar
 
+Get the code of soapwebservice2json.
 
+    git clone https://github.com/maye-msft/soapwebservice2json.git
+    cd soapwebservice2json
+    
 And then we config the soap-settings.js as
 
 ``` javascript
@@ -37,6 +42,12 @@ module.exports = {
     }
 }
 ```
+
+Run it
+
+    npm install
+    node ./soap-proxy.js
+    
 
 Now it can try the rest API
 
